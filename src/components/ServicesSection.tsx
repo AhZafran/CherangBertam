@@ -51,7 +51,7 @@ const services = [
   },
 ];
 
-const WHATSAPP_URL = "https://wa.link/tidbxo";
+const WHATSAPP_URL = "https://wa.link/g4ssl6";
 
 export default function ServicesSection() {
   return (

@@ -50,5 +50,5 @@ export const BRAND = {
 } as const;
 
 export function getWhatsAppUrl(): string {
-  return "https://wa.link/tidbxo";
+  return "https://wa.link/g4ssl6";
 }

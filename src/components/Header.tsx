@@ -19,7 +19,7 @@ export default function Header() {
 
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.link/tidbxo"
+            href="https://wa.link/g4ssl6"
             target="_blank"
             rel="noopener noreferrer"
             className={cn(

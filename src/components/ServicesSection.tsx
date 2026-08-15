@@ -2,48 +2,56 @@ import Image from "next/image";
 
 const services = [
   {
+    id: "rawatan-sakit-lutut",
     image: "/services/lutut-rawatan.webp",
     title: "Rawatan Sakit Lutut",
     description:
       "Nak tahu punca sebenar sakit lutut anda dan cara merawatnya? Dapatkan diagnosis yang tepat serta pelan rawatan yang sesuai hari ini!",
   },
   {
+    id: "program-diet",
     image: "/services/dietprogram.jpeg",
     title: "Program Diet",
     description:
       "Mahukan tubuh badan yang sihat dan ideal tanpa menyeksa diri? Ketahui rahsia diet yang berkesan dan sihat!",
   },
   {
+    id: "rawatan-sakit-saraf",
     image: "/services/rawatanstroke.webp",
     title: "Rawatan Sakit Saraf",
     description:
       "Risau sakit saraf mengganggu aktiviti harian anda? Dapatkan pemeriksaan saraf dengan diagnosis sejak sesi pertama!",
   },
   {
+    id: "pemeriksaan-kesihatan",
     image: "/services/pelajar-dan-kerja.webp",
     title: "Pemeriksaan Kesihatan Pelajar & Pekerja",
     description:
       "Pastikan anda sentiasa berada dalam keadaan terbaik untuk belajar atau bekerja!",
   },
   {
+    id: "saringan-kesihatan",
     image: "/services/kesihatan.webp",
     title: "Ujian Saringan Kesihatan",
     description:
       "Jangan biarkan masalah kesihatan menghalang anda! Buat ujian darah anda hari ini!",
   },
   {
+    id: "pembedahan-kecil",
     image: "/services/luka.webp",
     title: "Pembedahan Kecil",
     description:
       "Pembedahan Kecil dengan Ketepatan Tinggi dan Pemulihan yang Selesa.",
   },
   {
+    id: "weight-loss-injection",
     image: "/services/weight-loss-injection.jpg",
     title: "Weight Loss Injection",
     description:
       "Menawarkan suntikan penurunan berat badan untuk membantu anda mencapai matlamat pengurusan berat badan dengan rawatan yang terbukti berkesan dengan pengawasan Dr bertauliah.",
   },
   {
+    id: "weight-loss-medicine",
     image: "/services/weight-loss-medicine.jpg",
     title: "Weight Loss Medicine",
     description:
@@ -73,8 +81,9 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <div
-              key={service.title}
-              className="flex flex-col items-center text-center"
+              key={service.id}
+              id={service.id}
+              className="flex flex-col items-center text-center scroll-mt-24"
             >
               <div className="w-full relative rounded-xl overflow-hidden mb-6 shadow-md">
                 <Image
